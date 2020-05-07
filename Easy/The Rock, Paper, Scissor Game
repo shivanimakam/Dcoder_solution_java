@@ -1,0 +1,27 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n= s.nextInt();
+    String str = s.next();
+    int i = str.length();
+    int p = i/2;
+    int b= 0;
+    for(int j=0;j<p;j++)
+    {
+      String ty = str.substring(b,b+2);
+    //  System.out.println(ty);
+      if((ty.equals("RR"))||(ty.equals("PP"))||(ty.equals("SS")))
+         System.out.println("Draw");
+       else if((ty.equals("PR"))||(ty.equals("SP"))||(ty.equals("RS"))) 
+           System.out.println("Dcoder");
+       else 
+          System.out.println("You");
+          b=b+2;
+    }
+    
+   }
+ }
