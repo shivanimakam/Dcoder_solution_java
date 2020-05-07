@@ -1,0 +1,18 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+     Scanner s = new Scanner(System.in);
+     int d = s.nextInt();
+     int r = s.nextInt();
+     int a = s.nextInt();
+     if(r<a)
+         System.out.println("Ryan");
+     else if(r==a)
+     System.out.println("Draw");
+     else
+       System.out.println("Alex");
+   }
+ }
