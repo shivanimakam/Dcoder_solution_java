@@ -1,0 +1,14 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    String st = s.next();
+    st+=s.nextLine();
+    int n = st.length();
+    
+    System.out.println(st.substring(0,n-1)+", please?");
+   }
+ }
