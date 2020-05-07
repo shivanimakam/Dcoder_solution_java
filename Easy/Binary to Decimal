@@ -1,0 +1,21 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    String str = s.next();
+    int n = Integer.parseInt(str);
+    int rem,sum=0,i=0;
+    while(n>0)
+    {
+      rem=n%10;
+      sum=sum+(int)Math.pow(2,i)*rem;
+      n=n/10;
+      i++;
+    }
+    System.out.println(sum);
+   }
+ }
+    
