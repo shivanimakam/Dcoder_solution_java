@@ -1,0 +1,24 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n=s.nextInt();
+    for(int i=0;i<n;i++)
+    {
+      String st = s.next();
+      for(int j=0;j<st.length();j++)
+      {
+        char ch=st.charAt(j);
+        int k = (char)st.charAt(j);
+        if((k>47)&&(k<58)){
+          String t = Character.toString(ch);
+          System.out.print(t+" ");
+        }
+      }
+      
+    }
+   }
+ }
