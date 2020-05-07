@@ -1,0 +1,28 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n =s.nextInt();
+    for(int i=0;i<n;i++)
+    {
+      String st = s.next();
+      if(st.endsWith("e"))
+         System.out.println(st+"r");
+      else if(st.endsWith("er"))
+         {
+           int j=st.length();
+           st=st.substring(0,j-1)+"st";
+           System.out.println(st);
+         }
+      else if(st.endsWith("est"))
+         System.out.println(st);
+       else
+         System.out.println(st+"er");
+    }
+    
+   }
+ }
+    
