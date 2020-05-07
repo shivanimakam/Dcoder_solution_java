@@ -1,0 +1,20 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n = s.nextInt();
+    for(int i=0;i<n;i++)
+    {
+      int m = s.nextInt();
+      int a = s.nextInt();
+      if((m>70)&&(a>50))
+         System.out.println("Pass");
+      else
+         System.out.println("Fail");
+    }
+    
+   }
+ }
