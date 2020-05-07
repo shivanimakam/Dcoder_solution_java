@@ -1,0 +1,22 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n = s.nextInt();
+    int z = n;
+    int sum=0,r;
+    while(n>0)
+    {
+      r=n%10;
+      sum=sum+(r*r*r);
+      n=n/10;
+    }
+    if(z==sum)
+       System.out.println("YES");
+    else
+        System.out.println("NO");
+   }
+ }
