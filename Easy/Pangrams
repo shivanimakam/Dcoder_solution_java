@@ -1,0 +1,33 @@
+import java.util.*;
+
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+     Scanner s = new Scanner(System.in);
+     String str=s.next();
+    String s1= str.toLowerCase();
+     
+     char ch[] = s1.toCharArray();
+    Arrays.sort(ch);
+     String st1 = new String(ch);
+  
+    
+     while(st1.length()>26)
+     {
+     
+     for(int i=0;i<st1.length()-2;i++)
+     {
+       if(st1.charAt(i)==st1.charAt(i+1))
+          st1=st1.substring(0,i)+st1.substring(i+1);
+     }
+     }
+     
+     String st2 = new String("abcdefghijklmnopqrstuvwxyz");
+     if(st1.equals(st2))
+       System.out.println("YES");
+    else
+      System.out.println("NO");
+   }
+ }
