@@ -1,0 +1,25 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+   // int n =s.nextInt();
+   LinkedList<Integer> ls = new LinkedList<Integer>();
+    for(;;)
+    {
+      int y=s.nextInt();
+      if(y==-1)
+      break;
+      else
+      ls.add(y);
+    }
+    Collections.reverse(ls);
+    Iterator itr = ls.iterator();
+    while(itr.hasNext())
+    
+        System.out.print(itr.next()+" ");
+   }
+ }
+    
