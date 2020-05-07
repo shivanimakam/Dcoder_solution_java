@@ -1,0 +1,21 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    float r =s.nextFloat();
+    float pi=3.14f;
+    if(r<=0)
+        System.out.println("0");
+    else
+    {
+      float x = pi*r*r;
+      
+      System.out.printf("%.2f",x);
+    }
+       
+   }
+ }
+    
