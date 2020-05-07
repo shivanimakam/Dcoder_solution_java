@@ -1,0 +1,32 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int i = s.nextInt();
+    int j= s.nextInt();
+    int z= i+j;
+    if(z<=21)
+       System.out.println(z);
+    else if((z>21)&&((i==11)||(j==11)))
+       if(i==11)
+      {
+        i = 1;
+        int m= i+j;
+        System.out.println(m);
+      }
+      else
+      {
+        j=1;
+        int n = i+j;
+        System.out.println(n);
+      }
+       
+    else
+    {
+      System.out.println("0");
+    }
+   }
+ }
