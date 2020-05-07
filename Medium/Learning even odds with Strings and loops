@@ -1,0 +1,27 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n =s.nextInt();
+    for(int i=0;i<n;i++)
+    {
+      String str=s.next();
+      char ch[]=str.toCharArray();
+      String even="";
+      String odd="";
+      for(int j=0;j<str.length();j++)
+      {
+        if(j%2==0)
+        even=even+ch[j];
+        else 
+         odd=odd+ch[j];
+      }
+      System.out.println(even+" "+odd);
+    }
+    
+   }
+ }
+    
