@@ -1,0 +1,34 @@
+import java.util.*;
+
+class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n = s.nextInt();
+    String str = s.next();
+    int st=s.nextInt();
+    int end=s.nextInt();
+    char ch1 = str.charAt(st);
+    char ch2 = str.charAt(end);
+   
+   int st1 = (char)ch1;
+   if((st1>64)&&(st1<91))
+      st1=st1+32;
+   else
+     st1=st1-32;
+     
+    int st2 = (char)ch2;
+   if((st2>64)&&(st2<91))
+      st2=st2+32;
+   else
+     st2=st2-32;
+    
+    ch1 = (char)st1;
+    ch2 = (char)st2;
+    String a = Character.toString(ch1);
+    String b = Character.toString(ch2);
+    String c = str.substring(0,st)+a+str.substring(st+1,end)+b+str.substring(end+1);
+    System.out.println(c);
+   } 
+ }
