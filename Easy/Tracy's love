@@ -1,0 +1,21 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int a = s.nextInt();
+    int b= s.nextInt();
+    int z = a-b;
+    int y = a+b;
+    if(y==6)
+        System.out.println("Love");
+     else if(z==6)
+         System.out.println("Love");
+     else if (b-a==6)
+        System.out.println("Love");
+     else 
+        System.out.println("Hate");
+   }
+ }
