@@ -1,0 +1,19 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    String str =s.next();
+    String st ="111111";
+    String st1="000000";
+    if(str.indexOf(st)>=0)
+        System.out.println("Bad");
+    else if(str.indexOf(st1)>=0)
+        System.out.println("Bad");
+     else 
+         System.out.println("Good");
+   }
+ }
+    
