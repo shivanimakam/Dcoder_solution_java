@@ -1,0 +1,35 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int a=0,b=0;
+    for(int i=0;i<3;i++)
+    {
+    int y=s.nextInt();
+      a=a+y;
+    }
+    for(int i=0;i<3;i++)
+    {
+    int z=s.nextInt();
+      b=b+z;
+    }
+    if(a>b)
+    {
+      int u = a-b;
+      System.out.println("Garry "+u);
+    }
+    else if(a==b)
+    {
+      System.out.println("None 0");
+    }
+    else
+    {
+      int o = b-a;
+      System.out.println("Sharry "+o);
+    }
+    
+   }
+ }
