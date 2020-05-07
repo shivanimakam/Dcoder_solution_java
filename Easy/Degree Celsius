@@ -1,0 +1,8 @@
+import java.util.*;
+class Dcoder
+{
+  Scanner s = new Scanner(System.in);
+  int cel = s.nextInt();
+  int fah = (n*9/5)+32;
+  System.out.println(fah);
+}
