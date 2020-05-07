@@ -1,0 +1,41 @@
+import java.util.*;
+
+ class Dcoder
+ {
+   public static void main(String args[])
+   { 
+    Scanner s = new Scanner(System.in);
+    int n =s.nextInt();
+    Stack<Integer> stack = new Stack<Integer>();
+    String p="PUSH";
+    String po="POP";
+    String pe="PEEK";
+    for(int i = 0;i<n;i++)
+    {
+      String  str= s.next();
+      if(str.equals(p))
+      {
+        int k = s.nextInt();
+        stack.push(k);
+      }
+      else if(str.equals(po))
+      {
+        stack.pop();
+      }
+      else
+      {
+        Integer element = (Integer) stack.peek();
+         System.out.println(element); 
+
+      }
+    }
+    int sum=0;
+   while(!stack.empty())
+   {
+     int t = stack.pop();
+     sum=sum+t;
+   }
+    System.out.println(sum);
+   }
+ }
+    
